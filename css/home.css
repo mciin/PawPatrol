@@ -128,8 +128,8 @@
 /* ---- Discount Banner ---- */
 .discount-banner {
   border-radius: 20px;
-  /* background: linear-gradient(135deg, #ec4899, #8b5cf6); */
-  background: #FBEBF8;
+  /* background: #FBEBF8; */
+  background: #C4E7F6;
   padding: 22px 20px;
   margin-bottom: 24px;
   display: flex;
@@ -141,8 +141,9 @@
 .discount-text { flex: 1; }
 
 .discount-badge {
-  background: rgb(255, 255, 255);
-  color: #871E73;
+  background: rgba(255, 255, 255, 0.5);
+  /* color: #871E73; */
+  color: #0F76A3;
   font-size: .7rem;
   font-weight: 700;
   padding: 3px 9px;
@@ -154,14 +155,16 @@
 .discount-title {
   font-size: 1rem;
   font-weight: 800;
-  color: #871E73;
+  /* color: #871E73; */
+  color: #0F76A3;
   margin-bottom: 12px;
   line-height: 1.3;
 }
 
 .claim-btn {
   background: var(--white);
-  color: #871E73;
+  /* color: #871E73; */
+  color: #0F76A3;
   border: none;
   border-radius: 50px;
   padding: 9px 18px;
@@ -172,8 +175,6 @@
   white-space: nowrap;
   transition: transform .2s;
 }
-
-.discount-emoji { font-size: 2.8rem; flex-shrink: 0; }
 
 /* ---- Active Booking Empty State ---- */
 .empty-state {

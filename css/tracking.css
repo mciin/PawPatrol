@@ -61,26 +61,6 @@
   margin-bottom: 12px;
 }
 
-.tt-banner-emoji { font-size: 1.7rem; }
-
-.tt-banner-label {
-  font-size: .82rem;
-  font-weight: 900;
-  color: var(--gray-600);
-}
-
-.tt-banner-time {
-  font-size: 1.1rem;
-  font-weight: 1000;
-  color: #92400e;
-  margin-top: 2px;
-}
-
-.tt-banner-support {
-  font-size: .86rem;
-  color: var(--gray-600);
-  margin-top: 2px;
-}
 
 .tt-driver-card {
   display: flex;

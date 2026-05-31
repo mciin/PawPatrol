@@ -49,8 +49,6 @@
   border: 1.5px solid transparent;
 }
 
-.category-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
-
 .category-card[data-category="sitting"]  { background: #fce7f3; }
 .category-card[data-category="walking"]  { background: #dcfce7; }
 .category-card[data-category="taxi"]     { background: #fef9c3; }
@@ -173,8 +171,6 @@
   white-space: nowrap;
   transition: transform .2s;
 }
-
-.claim-btn:hover { transform: scale(1.05); }
 
 .discount-emoji { font-size: 2.8rem; flex-shrink: 0; }
 

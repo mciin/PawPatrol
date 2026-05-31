@@ -4,26 +4,26 @@
 
 /* ---- Profile Header Banner ---- */
 .profile-banner {
-  height: 130px;
+  height: 200px;
   background: linear-gradient(135deg, var(--peach) 0%, #fde0c8 40%, var(--lavender) 100%);
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 
 .profile-avatar-wrap {
   position: absolute;
-  bottom: -44px;
+  bottom: -70px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .profile-avatar {
-  width: 88px;
-  height: 88px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid var(--white);
-  box-shadow: var(--shadow-md);
+  /* box-shadow: var(--shadow-md); */
   display: block;
 }
 
@@ -63,25 +63,18 @@
 }
 
 .menu-item:last-child { border-bottom: none; }
-.menu-item:hover { background: var(--gray-50); }
 
-.menu-icon-wrap {
-  width: 38px;
-  height: 38px;
+.menu-icon-wrap img{
+  width: 24px;
+  height: auto;
   border-radius: 11px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
-  flex-shrink: 0;
 }
-
-.icon-blue   { background: #dbeafe; }
-.icon-pink   { background: #fce7f3; }
-.icon-purple { background: #ede9fe; }
-.icon-green  { background: #dcfce7; }
-.icon-orange { background: #ffedd5; }
-.icon-gray   { background: var(--gray-100); }
+.angle img {
+  transform: rotate(-15deg);
+}
 
 .menu-label {
   flex: 1;
@@ -104,15 +97,7 @@
   font-family: var(--font);
   font-size: .95rem;
   font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 6px 20px rgba(239,68,68,.3);
-  transition: transform .2s, box-shadow .2s;
   margin-top: 8px;
   margin-bottom: 8px;
   letter-spacing: .3px;
-}
-
-.logout-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(239,68,68,.4);
 }

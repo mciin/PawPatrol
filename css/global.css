@@ -58,9 +58,24 @@ body {
   overflow-y: auto;
 }
 
-/* ==================
-   Page Header
-   ================== */
+.destination {
+  background: var(--brand-blue);
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.destination::after {
+  content: '';
+  background: white;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+}
+
 .page-header {
   display: flex;
   align-items: center;
@@ -129,8 +144,6 @@ body {
   transition: background .2s;
   flex: 1;
 }
-
-.nav-item:hover { background: var(--gray-100); }
 
 .nav-icon { width: 22px; height: 22px; color: var(--gray-400); transition: color .2s; }
 .nav-label { font-size: .65rem; font-weight: 600; color: var(--gray-400); transition: color .2s; }
@@ -283,7 +296,6 @@ body {
   transition: color .2s, transform .2s;
 }
 
-.fav-btn:hover { transform: scale(1.15); }
 .fav-btn.active { color: #ff6b8a; }
 .fav-btn svg { width: 20px; height: 20px; }
 

@@ -2,19 +2,27 @@
    PawPatrol – Taxi Page CSS
    =========================== */
 
-/* ---- Hero Banner ---- */
-.taxi-hero {
-  border-radius: 22px;
-  background: linear-gradient(135deg, #fef3c7, #fde68a);
-  padding: 22px 20px;
+/* ---- Hero Banner ---- */  
+.taxi-hero img {
   margin-bottom: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  object-fit: cover;
 }
 
-.taxi-hero-text {}
+.page-header a{
+  text-align: center;
+}
+
+.page-header img {
+    color:var(--gray-400);
+    font-size:1.4rem;
+    text-decoration:none; 
+    width: 24px; 
+    height: auto;
+    transform: translateX(-10px);
+}
 
 .taxi-tag {
   display: inline-block;
@@ -79,7 +87,11 @@
   background: var(--white);
 }
 
-.loc-pin { font-size: 1.1rem; flex-shrink: 0; }
+.loc-pin img{ 
+ width: 18px;
+ height: auto;
+}
+
 
 .loc-text { flex: 1; }
 .loc-label { font-size: .7rem; color: var(--gray-400); font-weight: 500; margin-bottom: 2px; }
@@ -124,7 +136,7 @@
   font-family: var(--font);
   font-size: .88rem;
   font-weight: 600;
-  color: var(--gray-800);
+  color: var(--gray-400);
   background: transparent;
 }
 
@@ -137,7 +149,7 @@
   font-family: var(--font);
   font-size: .88rem;
   font-weight: 600;
-  color: var(--gray-800);
+  color: var(--gray-400);
   background: var(--gray-50);
   outline: none;
   cursor: pointer;
@@ -146,7 +158,6 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 14px center;
-  transition: border-color .2s;
 }
 
 .pet-select:focus { border-color: var(--brand-blue); background-color: var(--white); }
@@ -168,7 +179,6 @@
   background: var(--white);
 }
 
-.ride-card:hover { border-color: var(--brand-yellow); }
 
 .ride-card.selected {
   border-color: var(--brand-yellow);
@@ -176,10 +186,29 @@
   box-shadow: 0 4px 16px rgba(245,158,11,.2);
 }
 
-.ride-emoji { font-size: 2rem; margin-bottom: 8px; display: block; }
-.ride-title { font-size: .88rem; font-weight: 800; color: var(--gray-800); margin-bottom: 4px; }
-.ride-desc  { font-size: .72rem; color: var(--gray-400); margin-bottom: 8px; line-height: 1.4; }
-.ride-price { font-size: .95rem; font-weight: 800; color: var(--brand-yellow); }
+.ride-emoji img{ 
+  width: 50px;
+  height: auto; 
+}
+
+.ride-title { 
+  font-size: .88rem; 
+  font-weight: 800; 
+  color: var(--gray-800); 
+  margin-bottom: 4px; 
+}
+
+.ride-desc  { 
+  font-size: .72rem; 
+  color: var(--gray-400); 
+  margin-bottom: 8px; line-height: 1.4; 
+}
+
+.ride-price { 
+  font-size: .95rem; 
+  font-weight: 800; 
+  color: var(--brand-yellow); 
+}
 
 /* ---- Book CTA ---- */
 .book-taxi-btn {
@@ -192,16 +221,8 @@
   font-family: var(--font);
   font-size: 1rem;
   font-weight: 800;
-  cursor: pointer;
-  box-shadow: 0 8px 24px rgba(245,158,11,.4);
-  transition: transform .2s, box-shadow .2s;
   letter-spacing: .3px;
   margin-top: 4px;
-}
-
-.book-taxi-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(245,158,11,.5);
 }
 
 /* ---- Back link ---- */
@@ -211,7 +232,6 @@
   gap: 6px;
   font-size: .85rem;
   font-weight: 600;
-  color: var(--brand-blue);
   cursor: pointer;
   text-decoration: none;
   margin-bottom: 4px;

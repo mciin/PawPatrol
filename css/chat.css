@@ -20,8 +20,6 @@
   position: relative;
 }
 
-.chat-item:hover { background: var(--gray-50); }
-
 /* ---- Avatar with online indicator ---- */
 .chat-avatar-wrap { position: relative; flex-shrink: 0; }
 
@@ -44,7 +42,7 @@
 }
 
 /* ---- Chat Info ---- */
-.chat-info { flex: 1; min-width: 0; }
+.chat-info { flex: 1; min-width: 0;}
 
 .chat-top {
   display: flex;
@@ -101,7 +99,7 @@
 
 /* ---- Divider between chat groups ---- */
 .chat-divider {
-  height: 1px;
-  background: var(--gray-100);
+  height: 1.5px;
+  background: var(--gray-200);
   margin: 6px 0;
 }

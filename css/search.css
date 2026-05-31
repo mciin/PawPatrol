@@ -47,11 +47,6 @@
   transition: all .2s ease;
 }
 
-.filter-pill:hover {
-  border-color: var(--brand-blue);
-  color: var(--brand-blue);
-}
-
 .filter-pill.active {
   background: var(--brand-blue);
   border-color: var(--brand-blue);

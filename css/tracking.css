@@ -11,19 +11,14 @@
   grid-template-columns: 44px 1fr 44px;
   align-items: center;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 32px;
+  margin-top: 8px;
 }
 
-.tt-back-btn {
-  width: 44px;
-  height: 44px;
-  border-radius: 14px;
-  border: 1.5px solid var(--gray-200);
-  background: var(--white);
-  cursor: pointer;
-  color: var(--brand-blue);
-  font-size: 1.1rem;
-  font-weight: 800;
+.tc-back-btn {
+  width: 30px;
+  height: auto;
+  transform: translateX(10px);
 }
 
 .tt-title {
@@ -36,72 +31,6 @@
 .tt-content {
   padding-bottom: 100px;
 }
-
-.tt-map {
-  border-radius: 18px;
-  background: linear-gradient(135deg, rgba(254,243,199,.9), rgba(253,230,138,.55));
-  border: 1.5px solid rgba(245,158,11,.22);
-  padding: 14px;
-  margin-bottom: 14px;
-}
-
-.tt-map-streets {
-  position: relative;
-  height: 280px;
-  border-radius: 14px;
-  background:
-    radial-gradient(circle at 20% 35%, rgba(245,158,11,.18), transparent 45%),
-    radial-gradient(circle at 75% 65%, rgba(245,158,11,.12), transparent 55%),
-    linear-gradient(#ffffff, #fffaf0);
-  border: 1px solid rgba(245,158,11,.16);
-  overflow: hidden;
-}
-
-.tt-road {
-  position: absolute;
-  border-radius: 999px;
-  background: rgba(148,163,184,.18);
-}
-
-.tt-road-1 { width: 66%; height: 10px; top: 58%; left: 18%; transform: rotate(-14deg); }
-.tt-road-2 { width: 72%; height: 10px; top: 28%; left: 8%; transform: rotate(12deg); }
-.tt-road-3 { width: 58%; height: 10px; top: 67%; left: 30%; transform: rotate(26deg); }
-
-.tt-route-line {
-  position: absolute;
-  inset: 32px 28px;
-  border-radius: 999px;
-  border: 3px dashed rgba(245,158,11,.55);
-  transform: rotate(-6deg);
-  opacity: .9;
-}
-
-.tt-pet-taxi {
-  position: absolute;
-  left: 22%;
-  top: 58%;
-  width: 36px;
-  height: 36px;
-  border-radius: 16px;
-  background: rgba(245,158,11,.18);
-  border: 1.5px solid rgba(245,158,11,.35);
-}
-
-.tt-pin {
-  position: absolute;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: var(--white);
-  border: 1.5px solid rgba(245,158,11,.35);
-  box-shadow: 0 10px 22px rgba(245,158,11,.18);
-  font-size: 1.05rem;
-}
-
-.tt-pin-driver { top: 58%; left: 22%; }
-.tt-pin-destination { top: 20%; left: 62%; }
 
 .tt-speech {
   position: absolute;
@@ -123,17 +52,12 @@
   border: 1.5px solid var(--gray-100);
   border-radius: 18px;
   padding: 16px;
-  box-shadow: var(--shadow-sm);
 }
 
-.tt-banner {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 12px;
+.tt-banner img{
+  width: 100%; 
+  height: auto; 
   border-radius: 16px;
-  border: 1.5px solid rgba(245,158,11,.22);
-  background: rgba(245,158,11,.10);
   margin-bottom: 12px;
 }
 
@@ -164,9 +88,9 @@
   align-items: center;
   padding: 12px 12px;
   border-radius: 16px;
-  border: 1.5px solid var(--gray-100);
+  border: 1.5px solid var(--gray-200);
   background: var(--gray-50);
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 
 .tt-driver-avatar {
@@ -228,7 +152,12 @@
   color: var(--gray-800);
 }
 
-.tt-action-icon { font-size: 1.05rem; }
+.tt-action-icon img{ 
+  width: 20px;
+  height: auto;
+  object-fit: fill;
+  transform: translateY(2px);
+ }
 
 .tt-cancel-btn {
   width: 100%;
@@ -251,7 +180,6 @@
   background: linear-gradient(135deg, #2563eb, #60a5fa);
   color: var(--white);
   font-weight: 1000;
-  box-shadow: 0 14px 30px rgba(37,99,235,.25);
   opacity: 0;
   transform: translateY(6px);
   pointer-events: none;

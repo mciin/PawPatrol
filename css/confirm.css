@@ -1,0 +1,141 @@
+.taxi-confirm-page {
+  min-height: 100%;
+}
+
+.tc-header {
+  display: grid;
+  grid-template-columns: 44px 1fr 44px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+
+}
+
+.tc-back-btn {
+  width: 30px;
+  height: auto;
+}
+
+.tc-title {
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: var(--gray-800);
+}
+
+.tc-content {
+  padding-bottom: 90px;
+}
+
+.tc-route-legend {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tc-legend-pill {
+  font-size: .78rem;
+  font-weight: 800;
+  color: #92400e;
+  background: #FEF1DD;
+  border: 1.5px solid rgba(245,158,11,.25);
+  padding: 7px 12px;
+  border-radius: 999px;
+  transform: translateY(-60px);
+}
+
+.tc-card {
+  background: var(--white);
+  border: 1.5px solid var(--gray-100);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.tc-info {
+  display: grid;
+  gap: 10px;
+}
+
+.tc-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+
+.tc-icon {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+}
+
+.tc-icon img {
+  width: 24px;
+  height: auto;
+}
+
+.tc-label {
+  font-size: .78rem;
+  color: var(--gray-500);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  margin-bottom: 2px;
+}
+
+.tc-support {
+  font-size: .92rem;
+  color: var(--gray-800);
+  font-weight: 700;
+}
+
+.tc-divider {
+  height: 1px;
+  background: var(--gray-100);
+  margin: 14px 0;
+}
+
+.tc-pricing {
+  display: grid;
+  gap: 10px;
+}
+
+.tc-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-size: .92rem;
+}
+
+.tc-price-left { color: var(--gray-500); font-weight: 800; }
+.tc-price-right { color: var(--gray-800); font-weight: 900; }
+
+.tc-total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--gray-200);
+  margin-top: 12px;
+}
+
+.tc-total-left { color: var(--gray-700); font-weight: 900; }
+.tc-total-right { color: var(--brand-yellow); font-weight: 1000; font-size: 1.05rem; }
+
+.tc-confirm-btn {
+  width: 100%;
+  margin-top: 32px;
+  padding: 16px 14px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 900;
+  transition: transform .15s, box-shadow .15s;
+}

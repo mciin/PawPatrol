@@ -417,31 +417,25 @@ function initTaxiTracking() {
 
   if (viewDetailsBtn) viewDetailsBtn.classList.remove('show');
 
-  // After 3 seconds: Driver On The Way -> Trip in Progress (label: Trip duration)
+  // After 3 seconds: swap banner image to completed tracking
   setTimeout(() => {
     const title = $('.tt-title');
     if (title) title.textContent = 'Trip Completed';
-
     // Hide Cancel button after driver is on the way
     const cancelBtn = $('.tt-cancel-btn');
     if (cancelBtn) cancelBtn.style.display = 'none';
-
     // Update speech/banner
     if (speechEl) speechEl.textContent = 'Trip Completed';
     if (banner) {
       banner.classList.add('in-progress');
     }
-
     // Change banner label to requested text
     const bannerLabelEl = $('.tt-banner-label');
     if (bannerLabelEl) bannerLabelEl.textContent = 'Trip duration';
-
     if (safeLabelEl) safeLabelEl.textContent = 'Trip duration:';
-    if (etaTime) etaTime.textContent = '7 min';
-    if (etaSupport) etaSupport.textContent = 'We hope your pet had a great ride!';
-    if (etaLabel) etaLabel.textContent = 'In Progress';
-
     if (viewDetailsBtn) viewDetailsBtn.classList.add('show');
+    const bannerImg = banner?.querySelector('img');
+    if (bannerImg) bannerImg.src = '../assets/trip-complete.png';
   }, 3000);
 
   // CTA

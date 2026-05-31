@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PawPatrol – Ride Details</title>
+  <title>PawPatrol</title>
   <link rel="stylesheet" href="../css/global.css">
-  <link rel="stylesheet" href="../css/taxi/confirm.css">
+  <link rel="stylesheet" href="../css/confirm.css">
 </head>
 <body>
 
@@ -13,27 +13,15 @@
 
     <!-- Header -->
     <header class="tc-header">
-      <button class="tc-back-btn" type="button" aria-label="Back">←</button>
-      <h1 class="tc-title">Ride Details</h1>
+      <img style="margin-top: 12px;" src="../assets/back.png" class="tc-back-btn" type="button" aria-label="Back" />
+      <h1 class="tc-title" style="margin-top: 12px;">Ride Details</h1>
       <div class="tc-spacer" aria-hidden="true"></div>
     </header>
 
     <main class="page-content tc-content">
-
       <!-- Map -->
       <section class="tc-map" aria-label="Ride route map">
-        <div class="tc-map-streets">
-          <div class="tc-road tc-road-1"></div>
-          <div class="tc-road tc-road-2"></div>
-          <div class="tc-road tc-road-3"></div>
-
-          <div class="tc-route-line"></div>
-          <div class="tc-taxi-vehicle" aria-hidden="true"></div>
-
-          <div class="tc-pin tc-pin-start" aria-label="Pickup pin">📍</div>
-          <div class="tc-pin tc-pin-end" aria-label="Destination pin">📍</div>
-        </div>
-
+        <img style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; margin-top: 12px;" src="../assets/map.png" />
         <div class="tc-route-legend">
           <span class="tc-legend-pill">Pet Taxi Route</span>
         </div>
@@ -43,7 +31,7 @@
       <section class="tc-card" aria-label="Ride information card">
         <div class="tc-info">
           <div class="tc-row">
-            <div class="tc-icon" aria-hidden="true">📍</div>
+            <div class="tc-icon" aria-hidden="true"><div class="destination"></div></div>
             <div class="tc-text">
               <div class="tc-label">Pickup Location</div>
               <div class="tc-support">Maple Street, Springfield</div>
@@ -51,7 +39,7 @@
           </div>
 
           <div class="tc-row">
-            <div class="tc-icon" aria-hidden="true">🏁</div>
+            <div class="tc-icon" aria-hidden="true"><img src="../assets/place.png" /></div>
             <div class="tc-text">
               <div class="tc-label">Destination</div>
               <div class="tc-support">Oak Avenue, Springfield</div>
@@ -59,18 +47,18 @@
           </div>
 
           <div class="tc-row">
-            <div class="tc-icon" aria-hidden="true">📅</div>
+            <div class="tc-icon" aria-hidden="true"><img src="../assets/calendar.png" /></div>
             <div class="tc-text">
-              <div class="tc-label">Date &amp; Time</div>
+              <div class="tc-label">Date &Time</div>
               <div class="tc-support">Jun 20, 2026 · 9:30 AM</div>
             </div>
           </div>
 
           <div class="tc-row">
-            <div class="tc-icon" aria-hidden="true">🐾</div>
+            <div class="tc-icon" aria-hidden="true"><img src="../assets/pet.png" /></div>
             <div class="tc-text">
               <div class="tc-label">Pet Type</div>
-              <div class="tc-support">🐕 Pet Standard</div>
+              <div class="tc-support">Pet Standard</div>
             </div>
           </div>
         </div>
@@ -96,7 +84,7 @@
         </div>
 
         <button class="tc-confirm-btn" type="button" aria-label="Confirm and book">
-          Confirm &amp; Book
+          Confirm & Book
         </button>
       </section>
 

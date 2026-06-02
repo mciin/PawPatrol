@@ -21,11 +21,11 @@ function initNav() {
       };
 
       const pageMapFromRoot = {
-        home: 'Pages/home.html',
-        search: 'Pages/search.html',
-        booking: 'Pages/booking.html',
-        chat: 'Pages/chat.html',
-        profile: 'Pages/profile.html',
+        home: 'pages/home.html',
+        search: 'pages/search.html',
+        booking: 'pages/booking.html',
+        chat: 'pages/chat.html',
+        profile: 'pages/profile.html',
       };
 
       const target = isInPagesFolder ? pageMapInPages[page] : pageMapFromRoot[page];
@@ -76,7 +76,7 @@ function initAuth() {
   // Login button → go to home
   if (loginBtn) {
     loginBtn.addEventListener('click', () => {
-      window.location.href = 'Pages/home.html';
+      window.location.href = 'pages/home.html';
     });
   }
 }

@@ -21,11 +21,11 @@ function initNav() {
       };
 
       const pageMapFromRoot = {
-        home: 'pages/home.html',
-        search: 'pages/search.html',
-        booking: 'pages/booking.html',
-        chat: 'pages/chat.html',
-        profile: 'pages/profile.html',
+        home: 'Pages/home.html',
+        search: 'Pages/search.html',
+        booking: 'Pages/booking.html',
+        chat: 'Pages/chat.html',
+        profile: 'Pages/profile.html',
       };
 
       const target = isInPagesFolder ? pageMapInPages[page] : pageMapFromRoot[page];

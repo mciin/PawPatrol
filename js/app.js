@@ -281,6 +281,7 @@ function openChatThread(item) {
 
   thread.querySelector('.thread-back').addEventListener('click', () => thread.classList.remove('open'));
 
+  // send msg
   const sendBtn = thread.querySelector('.thread-send');
   const inputEl = thread.querySelector('.thread-input');
   function sendMsg() {
@@ -296,8 +297,6 @@ function openChatThread(item) {
   }
   sendBtn.addEventListener('click', sendMsg);
   inputEl.addEventListener('keydown', e => { if (e.key === 'Enter') sendMsg(); });
-
-  const badge2 = item.querySelector('.unread-badge');
 }
 
 // Profile Page 

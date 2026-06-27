@@ -1,5 +1,5 @@
 # PawPatrol 
-This project was built as a **group assignment** for the **Human-Computer Interaction (HCI)** course, focusing on designing and implementing the **frontend** of the PawPatrol platform.
+This project was built as a **group assignment** for the **Human-Computer Interaction (HCI)** course, focusing on designing and implementing the **frontend** of the PawPatrol.
 
 The UI/UX design for this project was created using **Figma**, covering wireframes, mockups, and an interactive prototype of the PawPatrol platform.
 
@@ -7,7 +7,7 @@ The UI/UX design for this project was created using **Figma**, covering wirefram
  
 ## About
  
-**PetCare Connect** is a digital platform designed specifically for pet owners who are busy, working, or traveling and cannot look after their pets directly.
+**Pawpatrol** is a digital platform designed specifically for pet owners who are busy, working, or traveling and cannot look after their pets directly.
  
 Through this app, users can easily find and book a variety of pet care services from verified and trusted providers anytime, anywhere.
 
